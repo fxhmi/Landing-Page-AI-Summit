@@ -28,7 +28,7 @@ st.markdown(
         font-size: 64px;
         color: white;
         text-shadow: 2px 2px 4px #000000;
-        margin-top: 0;
+        margin-top: 180px;
         margin-bottom: 20px;
         text-align: center;
     ">
