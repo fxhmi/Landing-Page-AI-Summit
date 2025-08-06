@@ -23,8 +23,8 @@ set_bg("dummy_cover.png")
 
 st.markdown(
     """
-    <div style="text-align: center; margin-top: 190px; margin-bottom: 5px;">
-        <img src="Prasarana-01.png" alt="Prasarana Logo" style="max-width: 100%; height: auto;" />
+    <div style="text-align: center; margin-top: 185px; margin-bottom: 5px;">
+        <img src="Prasarana-01.png" style="max-width: 100%; height: auto;" />
     </div>
     <h1 style="
         font-family: 'Arial Black', Gadget, sans-serif;
