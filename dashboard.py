@@ -21,6 +21,12 @@ def set_bg(png_file):
 
 set_bg("dummy_cover.png")  
 
+st.markdown("""
+    <div style="text-align: center;">
+      <img src="Prasarana-01.png" alt="Prasarana Logo" style="max-width: 100%; height: auto;" />
+    </div>
+    """, unsafe_allow_html=True)
+
 st.markdown(
     """
     <h1 style="
@@ -38,14 +44,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("""
-    <div style="text-align: center;">
-      <img src="Prasarana-01.png" alt="Prasarana Logo" style="max-width: 100%; height: auto;" />
-    </div>
-    """, unsafe_allow_html=True)
 
-
-# Your existing buttons layout
 col1, col2 = st.columns(2)
 
 with col1:
