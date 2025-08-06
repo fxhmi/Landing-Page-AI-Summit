@@ -23,14 +23,18 @@ def set_bg(png_file):
 # Set background image
 set_bg("dummy_cover.png")  # Use your image filename here
 
+# Add Prasarana logo centered above title
 st.markdown(
     """
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+        <img src="Prasarana-01.jpg" alt="Prasarana Logo" style="width: 150px; height: auto;" />
+    </div>
     <h1 style="
         font-family: 'Arial Black', Gadget, sans-serif;
         font-size: 64px;
         color: white;
         text-shadow: 2px 2px 4px #000000;
-        margin-top: 190px;
+        margin-top: 0;
         margin-bottom: 20px;
         text-align: center;
     ">
@@ -40,34 +44,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# # Two subtitles
-# st.markdown(
-#     """
-#     <h3 style="
-#         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-#         font-size: 28px;
-#         color: #eee;
-#         text-shadow: 1px 1px 3px #000000;
-#         text-align: center;
-#         margin-bottom: 5px;
-#     ">
-#     Showcase Use Case 1
-#     </h3>
-#     <h3 style="
-#         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-#         font-size: 28px;
-#         color: #eee;
-#         text-shadow: 1px 1px 3px #000000;
-#         text-align: center;
-#         margin-bottom: 40px;
-#     ">
-#     Showcase Use Case 2
-#     </h3>
-#     """,
-#     unsafe_allow_html=True
-# )
-
-# Buttons in 2 columns
+# Your existing buttons layout
 col1, col2 = st.columns(2)
 
 with col1:
