@@ -27,7 +27,7 @@ set_bg("dummy_cover.png")  # Use your image filename here
 st.markdown(
     """
     <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
-        <img src="Prasarana-01.jpg" alt="Prasarana Logo" style="width: 150px; height: auto;" />
+        <img src="Prasarana-01.png" alt="Prasarana Logo" style="width: 150px; height: auto;" />
     </div>
     <h1 style="
         font-family: 'Arial Black', Gadget, sans-serif;
