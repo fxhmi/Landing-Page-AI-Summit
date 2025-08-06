@@ -1,7 +1,6 @@
 import streamlit as st
 import base64
 
-# Function to set background image
 def set_bg(png_file):
     with open(png_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
@@ -20,10 +19,8 @@ def set_bg(png_file):
         unsafe_allow_html=True
     )
 
-# Set background image
-set_bg("dummy_cover.png")  # Use your image filename here
+set_bg("dummy_cover.png")  
 
-# Add Prasarana logo centered above title
 st.markdown(
     """
     <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
