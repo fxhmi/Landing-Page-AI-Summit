@@ -63,45 +63,106 @@ st.markdown(
 # Your existing buttons layout
 col1, col2 = st.columns(2)
 
+# with col1:
+#     st.markdown(
+#         """
+#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+#             <button style="
+#                 width: 100%;
+#                 padding: 15px;
+#                 font-size: 20px;
+#                 color: white;
+#                 background-color: #0072C6;
+#                 border: none;
+#                 border-radius: 8px;
+#                 cursor: pointer;
+#                 box-shadow: 2px 2px 5px #000000;
+#             ">
+#             AI for Bus Punctuality
+#             </button>
+#         </a>
+#         """,
+#         unsafe_allow_html=True,
+#     )
+
+# with col2:
+#     st.markdown(
+#         """
+#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+#             <button style="
+#                 width: 100%;
+#                 padding: 15px;
+#                 font-size: 20px;
+#                 color: white;
+#                 background-color: #FF4B4B;
+#                 border: none;
+#                 border-radius: 8px;
+#                 cursor: pointer;
+#                 box-shadow: 2px 2px 5px #000000;
+#             ">
+#             AI for Bus Replacement
+#             </button>
+#         </a>
+#         """,
+#         unsafe_allow_html=True,
+#     )
+
 with col1:
     st.markdown(
         """
         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
-            <button style="
+            <div style="
                 width: 100%;
-                padding: 15px;
-                font-size: 20px;
+                padding: 15px 0;
+                font-size: 22px;
+                font-weight: 700;
                 color: white;
-                background-color: #0072C6;
-                border: none;
-                border-radius: 8px;
+                background: linear-gradient(135deg, #0072C6, #005A9E);
+                border-radius: 12px;
+                box-shadow: 0 8px 15px rgba(0, 114, 198, 0.4);
+                text-align: center;
                 cursor: pointer;
-                box-shadow: 2px 2px 5px #000000;
-            ">
-            AI for Bus Punctuality
-            </button>
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                user-select: none;
+                backdrop-filter: brightness(1.1);
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(0,114,198,0.6)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.4)';"
+            >
+                AI for Bus Punctuality
+            </div>
         </a>
         """,
         unsafe_allow_html=True,
     )
 
+
 with col2:
     st.markdown(
         """
         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
-            <button style="
+            <div style="
                 width: 100%;
-                padding: 15px;
-                font-size: 20px;
+                padding: 15px 0;
+                font-size: 22px;
+                font-weight: 700;
                 color: white;
-                background-color: #FF4B4B;
-                border: none;
-                border-radius: 8px;
+                background: linear-gradient(135deg, #FF4B4B, #D03535);
+                border-radius: 12px;
+                box-shadow: 0 8px 15px rgba(255, 75, 75, 0.4);
+                text-align: center;
                 cursor: pointer;
-                box-shadow: 2px 2px 5px #000000;
-            ">
-            AI for Bus Replacement
-            </button>
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                user-select: none;
+                backdrop-filter: brightness(1.1);
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(255,75,75,0.6)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.4)';"
+            >
+                AI for Bus Replacement
+            </div>
         </a>
         """,
         unsafe_allow_html=True,
