@@ -114,13 +114,13 @@ with col1:
             <div style="
                 position: relative;
                 width: 100%;
-                padding: 15px 0;
+                padding: 20px 0;
                 font-size: 20px;
                 font-weight: 700;
                 color: white;
                 background: linear-gradient(135deg, #0072C6, #005A9E);
-                border-radius: 30px 30px 15px 15px;
-                box-shadow: 0 8px 15px rgba(0, 114, 198, 0.4);
+                border-radius: 20px 20px 30px 30px;
+                box-shadow: 0 8px 15px rgba(0, 114, 198, 0.5);
                 text-align: center;
                 cursor: pointer;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -129,31 +129,61 @@ with col1:
                 backdrop-filter: brightness(1.1);
                 overflow: visible;
             "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(0,114,198,0.6)';"
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.4)';"
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,114,198,0.7)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.5)';"
             >
                 AI for Bus Punctuality
+                <!-- Bus windows on top -->
                 <span style="
                     position: absolute;
-                    left: -30px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 25px;
-                    height: 25px;
-                    background: linear-gradient(135deg, #0072C6, #005A9E);
-                    border-radius: 8px 0 0 8px;
-                    box-shadow: 0 4px 10px rgba(0,114,198,0.3);
+                    top: 8px;
+                    left: 15%;
+                    width: 15%;
+                    height: 10px;
+                    background: #a6c8ff;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
                 "></span>
                 <span style="
                     position: absolute;
-                    right: -30px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 25px;
-                    height: 25px;
-                    background: linear-gradient(135deg, #005A9E, #003C66);
-                    border-radius: 0 8px 8px 0;
-                    box-shadow: 0 4px 10px rgba(0,56,102,0.3);
+                    top: 8px;
+                    left: 40%;
+                    width: 15%;
+                    height: 10px;
+                    background: #a6c8ff;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+                "></span>
+                <span style="
+                    position: absolute;
+                    top: 8px;
+                    left: 65%;
+                    width: 15%;
+                    height: 10px;
+                    background: #a6c8ff;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+                "></span>
+                <!-- Wheels -->
+                <span style="
+                    position: absolute;
+                    bottom: -12px;
+                    left: 20px;
+                    width: 24px;
+                    height: 24px;
+                    background: #222;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px #000 inset;
+                "></span>
+                <span style="
+                    position: absolute;
+                    bottom: -12px;
+                    right: 20px;
+                    width: 24px;
+                    height: 24px;
+                    background: #222;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px #000 inset;
                 "></span>
             </div>
         </a>
@@ -161,21 +191,20 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
 with col2:
     st.markdown(
         """
-        <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+        <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none; margin-left: 20px;">
             <div style="
                 position: relative;
                 width: 100%;
-                padding: 15px 0;
+                padding: 20px 0;
                 font-size: 20px;
                 font-weight: 700;
                 color: white;
                 background: linear-gradient(135deg, #FF4B4B, #D03535);
-                border-radius: 30px 30px 15px 15px;
-                box-shadow: 0 8px 15px rgba(255, 75, 75, 0.4);
+                border-radius: 20px 20px 30px 30px;
+                box-shadow: 0 8px 15px rgba(255, 75, 75, 0.5);
                 text-align: center;
                 cursor: pointer;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -183,32 +212,63 @@ with col2:
                 user-select: none;
                 backdrop-filter: brightness(1.1);
                 overflow: visible;
+                margin-left: 20px;
             "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(255,75,75,0.6)';"
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.4)';"
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(255,75,75,0.7)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.5)';"
             >
                 AI for Bus Replacement
+                <!-- Bus windows on top -->
                 <span style="
                     position: absolute;
-                    left: -30px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 25px;
-                    height: 25px;
-                    background: linear-gradient(135deg, #FF4B4B, #D03535);
-                    border-radius: 8px 0 0 8px;
-                    box-shadow: 0 4px 10px rgba(255,75,75,0.3);
+                    top: 8px;
+                    left: 15%;
+                    width: 15%;
+                    height: 10px;
+                    background: #ffb3b3;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
                 "></span>
                 <span style="
                     position: absolute;
-                    right: -30px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 25px;
-                    height: 25px;
-                    background: linear-gradient(135deg, #D03535, #990000);
-                    border-radius: 0 8px 8px 0;
-                    box-shadow: 0 4px 10px rgba(153,0,0,0.3);
+                    top: 8px;
+                    left: 40%;
+                    width: 15%;
+                    height: 10px;
+                    background: #ffb3b3;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+                "></span>
+                <span style="
+                    position: absolute;
+                    top: 8px;
+                    left: 65%;
+                    width: 15%;
+                    height: 10px;
+                    background: #ffb3b3;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+                "></span>
+                <!-- Wheels -->
+                <span style="
+                    position: absolute;
+                    bottom: -12px;
+                    left: 20px;
+                    width: 24px;
+                    height: 24px;
+                    background: #222;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px #000 inset;
+                "></span>
+                <span style="
+                    position: absolute;
+                    bottom: -12px;
+                    right: 20px;
+                    width: 24px;
+                    height: 24px;
+                    background: #222;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px #000 inset;
                 "></span>
             </div>
         </a>
