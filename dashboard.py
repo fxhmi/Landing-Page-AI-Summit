@@ -51,7 +51,7 @@ st.markdown(
         color: white;
         text-shadow: 2px 2px 4px #000000;
         margin-top: 210px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
         text-align: center;
     ">
     Prasarana AI Projects Showcase
