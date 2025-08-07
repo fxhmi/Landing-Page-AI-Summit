@@ -112,13 +112,14 @@ with col1:
         """
         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
             <div style="
+                position: relative;
                 width: 100%;
                 padding: 15px 0;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 700;
                 color: white;
                 background: linear-gradient(135deg, #0072C6, #005A9E);
-                border-radius: 12px;
+                border-radius: 30px 30px 15px 15px;
                 box-shadow: 0 8px 15px rgba(0, 114, 198, 0.4);
                 text-align: center;
                 cursor: pointer;
@@ -126,11 +127,34 @@ with col1:
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 user-select: none;
                 backdrop-filter: brightness(1.1);
+                overflow: visible;
             "
             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(0,114,198,0.6)';"
             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.4)';"
             >
                 AI for Bus Punctuality
+                <span style="
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    height: 25px;
+                    background: linear-gradient(135deg, #0072C6, #005A9E);
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: 0 4px 10px rgba(0,114,198,0.3);
+                "></span>
+                <span style="
+                    position: absolute;
+                    right: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    height: 25px;
+                    background: linear-gradient(135deg, #005A9E, #003C66);
+                    border-radius: 0 8px 8px 0;
+                    box-shadow: 0 4px 10px rgba(0,56,102,0.3);
+                "></span>
             </div>
         </a>
         """,
@@ -143,13 +167,14 @@ with col2:
         """
         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
             <div style="
+                position: relative;
                 width: 100%;
                 padding: 15px 0;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 700;
                 color: white;
                 background: linear-gradient(135deg, #FF4B4B, #D03535);
-                border-radius: 12px;
+                border-radius: 30px 30px 15px 15px;
                 box-shadow: 0 8px 15px rgba(255, 75, 75, 0.4);
                 text-align: center;
                 cursor: pointer;
@@ -157,11 +182,34 @@ with col2:
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 user-select: none;
                 backdrop-filter: brightness(1.1);
+                overflow: visible;
             "
             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 20px rgba(255,75,75,0.6)';"
             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.4)';"
             >
                 AI for Bus Replacement
+                <span style="
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    height: 25px;
+                    background: linear-gradient(135deg, #FF4B4B, #D03535);
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: 0 4px 10px rgba(255,75,75,0.3);
+                "></span>
+                <span style="
+                    position: absolute;
+                    right: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    height: 25px;
+                    background: linear-gradient(135deg, #D03535, #990000);
+                    border-radius: 0 8px 8px 0;
+                    box-shadow: 0 4px 10px rgba(153,0,0,0.3);
+                "></span>
             </div>
         </a>
         """,
