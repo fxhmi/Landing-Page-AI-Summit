@@ -13,11 +13,14 @@ def set_bg(png_file):
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            height: 100vh;  /* makes bg full viewport height */
+            margin: 0;      /* remove margin */
         }}
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 set_bg("dummy_cover.png")  
 
