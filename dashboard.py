@@ -40,13 +40,13 @@ def set_bg(png_file):
         unsafe_allow_html=True
     )
 
-
+#font-family: 'Arial Black', Gadget, sans-serif;
 set_bg("dummy_cover.png")  
 
 st.markdown(
     """
     <h1 style="
-        font-family: 'Arial Black', Gadget, sans-serif;
+        font-family: 'Roboto Black', Gadget, sans-serif;
         font-size: 64px;
         color: white;
         text-shadow: 2px 2px 4px #000000;
