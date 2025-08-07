@@ -1,6 +1,20 @@
 import streamlit as st
 import base64
 
+st.markdown(
+    """
+    <style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {
+        padding-top: 0rem;
+        margin: 0;
+        height: 100vh;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 def set_bg(png_file):
     with open(png_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
