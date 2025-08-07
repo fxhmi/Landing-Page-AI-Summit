@@ -33,7 +33,7 @@ def set_bg(png_file):
             background-repeat: no-repeat;
             background-attachment: fixed;
             height: 100vh;  /* makes bg full viewport height */
-            margin: 0;      /* remove margin */
+            margin: 50;      /* remove margin */
         }}
         </style>
         """,
