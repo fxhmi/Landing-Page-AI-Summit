@@ -47,7 +47,7 @@ st.markdown(
     """
     <h1 style="
         font-family: 'Roboto Black', Gadget, sans-serif;
-        font-size: 64px;
+        font-size: 74px;
         color: white;
         text-shadow: 2px 2px 4px #000000;
         margin-top: 210px;
