@@ -33,7 +33,7 @@ def set_bg(png_file):
             background-repeat: no-repeat;
             background-attachment: fixed;
             height: 100vh;  /* makes bg full viewport height */
-            margin: 50;      /* remove margin */
+            margin: 0;      /* remove margin */
         }}
         </style>
         """,
@@ -51,7 +51,7 @@ st.markdown(
         color: white;
         text-shadow: 2px 2px 4px #000000;
         margin-top: 210px;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         text-align: center;
     ">
     Prasarana AI Projects Showcase
