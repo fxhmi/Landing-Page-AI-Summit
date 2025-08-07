@@ -4,10 +4,15 @@ import base64
 st.markdown(
     """
     <style>
-    #root > div:nth-child(1) > div > div > div > div > section > div {
+    section.stMain .block-container {
         padding-top: 0rem;
+        margin-top: 0rem;
+    }
+    header.stAppHeader {
+        height: 0;
+        min-height: 0;
+        padding: 0;
         margin: 0;
-        height: 100vh;
     }
     </style>
     """,
