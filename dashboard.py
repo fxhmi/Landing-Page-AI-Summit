@@ -63,129 +63,23 @@ st.markdown(
 # Your existing buttons layout
 col1, col2 = st.columns(2)
 
-# with col1:
-#     st.markdown(
-#         """
-#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
-#             <button style="
-#                 width: 100%;
-#                 padding: 15px;
-#                 font-size: 20px;
-#                 color: white;
-#                 background-color: #0072C6;
-#                 border: none;
-#                 border-radius: 8px;
-#                 cursor: pointer;
-#                 box-shadow: 2px 2px 5px #000000;
-#             ">
-#             AI for Bus Punctuality
-#             </button>
-#         </a>
-#         """,
-#         unsafe_allow_html=True,
-#     )
-
-# with col2:
-#     st.markdown(
-#         """
-#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
-#             <button style="
-#                 width: 100%;
-#                 padding: 15px;
-#                 font-size: 20px;
-#                 color: white;
-#                 background-color: #FF4B4B;
-#                 border: none;
-#                 border-radius: 8px;
-#                 cursor: pointer;
-#                 box-shadow: 2px 2px 5px #000000;
-#             ">
-#             AI for Bus Replacement
-#             </button>
-#         </a>
-#         """,
-#         unsafe_allow_html=True,
-#     )
-
 with col1:
     st.markdown(
         """
         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
-            <div style="
-                position: relative;
+            <button style="
                 width: 100%;
-                padding: 20px 0;
+                padding: 15px;
                 font-size: 20px;
-                font-weight: 700;
                 color: white;
-                background: linear-gradient(135deg, #0072C6, #005A9E);
-                border-radius: 20px 20px 30px 30px;
-                box-shadow: 0 8px 15px rgba(0, 114, 198, 0.5);
-                text-align: center;
+                background-color: #0072C6;
+                border: none;
+                border-radius: 8px;
                 cursor: pointer;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                user-select: none;
-                backdrop-filter: brightness(1.1);
-                overflow: visible;
-            "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,114,198,0.7)';"
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.5)';"
-            >
-                AI for Bus Punctuality
-                <!-- Bus windows on top -->
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 15%;
-                    width: 15%;
-                    height: 10px;
-                    background: #a6c8ff;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 40%;
-                    width: 15%;
-                    height: 10px;
-                    background: #a6c8ff;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 65%;
-                    width: 15%;
-                    height: 10px;
-                    background: #a6c8ff;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <!-- Wheels -->
-                <span style="
-                    position: absolute;
-                    bottom: -12px;
-                    left: 20px;
-                    width: 24px;
-                    height: 24px;
-                    background: #222;
-                    border-radius: 50%;
-                    box-shadow: 0 0 8px #000 inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    bottom: -12px;
-                    right: 20px;
-                    width: 24px;
-                    height: 24px;
-                    background: #222;
-                    border-radius: 50%;
-                    box-shadow: 0 0 8px #000 inset;
-                "></span>
-            </div>
+                box-shadow: 2px 2px 5px #000000;
+            ">
+            AI for Bus Punctuality
+            </button>
         </a>
         """,
         unsafe_allow_html=True,
@@ -194,84 +88,190 @@ with col1:
 with col2:
     st.markdown(
         """
-        <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none; margin-left: 20px;">
-            <div style="
-                position: relative;
+        <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+            <button style="
                 width: 100%;
-                padding: 20px 0;
+                padding: 15px;
                 font-size: 20px;
-                font-weight: 700;
                 color: white;
-                background: linear-gradient(135deg, #FF4B4B, #D03535);
-                border-radius: 20px 20px 30px 30px;
-                box-shadow: 0 8px 15px rgba(255, 75, 75, 0.5);
-                text-align: center;
+                background-color: #FF4B4B;
+                border: none;
+                border-radius: 8px;
                 cursor: pointer;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                user-select: none;
-                backdrop-filter: brightness(1.1);
-                overflow: visible;
-                margin-left: 20px;
-            "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(255,75,75,0.7)';"
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.5)';"
-            >
-                AI for Bus Replacement
-                <!-- Bus windows on top -->
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 15%;
-                    width: 15%;
-                    height: 10px;
-                    background: #ffb3b3;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 40%;
-                    width: 15%;
-                    height: 10px;
-                    background: #ffb3b3;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    top: 8px;
-                    left: 65%;
-                    width: 15%;
-                    height: 10px;
-                    background: #ffb3b3;
-                    border-radius: 3px;
-                    box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
-                "></span>
-                <!-- Wheels -->
-                <span style="
-                    position: absolute;
-                    bottom: -12px;
-                    left: 20px;
-                    width: 24px;
-                    height: 24px;
-                    background: #222;
-                    border-radius: 50%;
-                    box-shadow: 0 0 8px #000 inset;
-                "></span>
-                <span style="
-                    position: absolute;
-                    bottom: -12px;
-                    right: 20px;
-                    width: 24px;
-                    height: 24px;
-                    background: #222;
-                    border-radius: 50%;
-                    box-shadow: 0 0 8px #000 inset;
-                "></span>
-            </div>
+                box-shadow: 2px 2px 5px #000000;
+            ">
+            AI for Bus Replacement
+            </button>
         </a>
         """,
         unsafe_allow_html=True,
     )
+
+# with col1:
+#     st.markdown(
+#         """
+#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+#             <div style="
+#                 position: relative;
+#                 width: 100%;
+#                 padding: 20px 0;
+#                 font-size: 20px;
+#                 font-weight: 700;
+#                 color: white;
+#                 background: linear-gradient(135deg, #0072C6, #005A9E);
+#                 border-radius: 20px 20px 30px 30px;
+#                 box-shadow: 0 8px 15px rgba(0, 114, 198, 0.5);
+#                 text-align: center;
+#                 cursor: pointer;
+#                 transition: transform 0.3s ease, box-shadow 0.3s ease;
+#                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#                 user-select: none;
+#                 backdrop-filter: brightness(1.1);
+#                 overflow: visible;
+#             "
+#             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,114,198,0.7)';"
+#             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0,114,198,0.5)';"
+#             >
+#                 AI for Bus Punctuality
+#                 <!-- Bus windows on top -->
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 15%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #a6c8ff;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 40%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #a6c8ff;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 65%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #a6c8ff;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <!-- Wheels -->
+#                 <span style="
+#                     position: absolute;
+#                     bottom: -12px;
+#                     left: 20px;
+#                     width: 24px;
+#                     height: 24px;
+#                     background: #222;
+#                     border-radius: 50%;
+#                     box-shadow: 0 0 8px #000 inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     bottom: -12px;
+#                     right: 20px;
+#                     width: 24px;
+#                     height: 24px;
+#                     background: #222;
+#                     border-radius: 50%;
+#                     box-shadow: 0 0 8px #000 inset;
+#                 "></span>
+#             </div>
+#         </a>
+#         """,
+#         unsafe_allow_html=True,
+#     )
+
+# with col2:
+#     st.markdown(
+#         """
+#         <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none; margin-left: 20px;">
+#             <div style="
+#                 position: relative;
+#                 width: 100%;
+#                 padding: 20px 0;
+#                 font-size: 20px;
+#                 font-weight: 700;
+#                 color: white;
+#                 background: linear-gradient(135deg, #FF4B4B, #D03535);
+#                 border-radius: 20px 20px 30px 30px;
+#                 box-shadow: 0 8px 15px rgba(255, 75, 75, 0.5);
+#                 text-align: center;
+#                 cursor: pointer;
+#                 transition: transform 0.3s ease, box-shadow 0.3s ease;
+#                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#                 user-select: none;
+#                 backdrop-filter: brightness(1.1);
+#                 overflow: visible;
+#                 margin-left: 20px;
+#             "
+#             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(255,75,75,0.7)';"
+#             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(255,75,75,0.5)';"
+#             >
+#                 AI for Bus Replacement
+#                 <!-- Bus windows on top -->
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 15%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #ffb3b3;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 40%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #ffb3b3;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     top: 8px;
+#                     left: 65%;
+#                     width: 15%;
+#                     height: 10px;
+#                     background: #ffb3b3;
+#                     border-radius: 3px;
+#                     box-shadow: 2px 0 5px rgba(255,255,255,0.6) inset;
+#                 "></span>
+#                 <!-- Wheels -->
+#                 <span style="
+#                     position: absolute;
+#                     bottom: -12px;
+#                     left: 20px;
+#                     width: 24px;
+#                     height: 24px;
+#                     background: #222;
+#                     border-radius: 50%;
+#                     box-shadow: 0 0 8px #000 inset;
+#                 "></span>
+#                 <span style="
+#                     position: absolute;
+#                     bottom: -12px;
+#                     right: 20px;
+#                     width: 24px;
+#                     height: 24px;
+#                     background: #222;
+#                     border-radius: 50%;
+#                     box-shadow: 0 0 8px #000 inset;
+#                 "></span>
+#             </div>
+#         </a>
+#         """,
+#         unsafe_allow_html=True,
+#     )
