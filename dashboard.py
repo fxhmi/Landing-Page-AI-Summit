@@ -66,7 +66,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown(
         """
-        <a href="https://swiftroute.streamlit.app/" target="_blank" style="text-decoration:none">
+        <a href="http://localhost:8501/" target="_blank" style="text-decoration:none">
             <button style="
                 width: 100%;
                 padding: 15px;
